@@ -1,41 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>three.js webgl - orbit controls</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../assets/css/styles.css">
-    <style>
-        body {
-            background-color: #ccc;
-            color: #000;
-        }
+<meta charset="utf-8">
+<title>Orbit - Three.js</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        a {
-            color: #f00;
-        }
-    </style>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background: #02070f;
+        color: #e5e9f0;
+    }
+
+    /* 🔝 barra superior */
+    .top-bar {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: rgba(10, 20, 40, 0.85);
+        padding: 8px 16px;
+        border-radius: 10px;
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.08);
+        z-index: 10;
+    }
+
+    .info {
+        font-size: 0.9rem;
+        color: #cbd5e1;
+        white-space: nowrap;
+    }
+
+    .btn-back {
+        background: linear-gradient(90deg, #3b82f6, #6366f1);
+        color: white;
+        padding: 5px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: 0.3s;
+    }
+
+    .btn-back:hover {
+        background: linear-gradient(90deg, #60a5fa, #818cf8);
+    }
+</style>
+
 </head>
 
 <body>
-    <a href="../index.html" style="display:inline-block;margin:1rem; padding:0.65rem 1rem; background:#3b82f6; color:#fff; text-decoration:none; border-radius:0.5rem;">Volver al menú</a>
-    <div id="info">
-        <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - orbit controls
-    </div>
 
+<!-- 🔝 barra -->
+<div class="top-bar">
+    <div class="info">
+        Mouse: rotar | Scroll: zoom | Click: mover
+    </div>
+    <a href="../index.html" class="btn-back">Volver</a>
+</div>
+
+<!-- IMPORTMAP -->
 <script type="importmap">
-        {
+{
   "imports": {
     "three": "../assets/build/three.module.js",
     "three/addons/": "../assets/jsm/"
   }
 }
-    </script>
+</script>
 
-
-    <script type="module" src="./js/main.js"></script>
+<script type="module" src="./js/main.js"></script>
 
 </body>
-
 </html>
