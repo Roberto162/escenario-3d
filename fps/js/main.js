@@ -1,11 +1,11 @@
-import * as THREE from "three";
-import Stats from "three/addons/libs/stats.module.js";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { Octree } from "three/addons/math/Octree.js";
-import { OctreeHelper } from "three/addons/helpers/OctreeHelper.js";
-import { Capsule } from "three/addons/math/Capsule.js";
-import { GUI } from "three/addons/libs/lil-gui.module.min.js";
+import * as THREE from "../../assets/build/three.module.js";
 
+import Stats from "../../assets/jsm/libs/stats.module.js";
+import { GLTFLoader } from "../../assets/jsm/loaders/GLTFLoader.js";
+import { Octree } from "../../assets/jsm/math/Octree.js";
+import { OctreeHelper } from "../../assets/jsm/helpers/OctreeHelper.js";
+import { Capsule } from "../../assets/jsm/math/Capsule.js";
+import { GUI } from "../../assets/jsm/libs/lil-gui.module.min.js";
 const clock = new THREE.Clock();
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x88ccee);

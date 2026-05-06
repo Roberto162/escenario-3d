@@ -1,9 +1,10 @@
-import * as THREE from "three";
-import Stats from "three/addons/libs/stats.module.js";
-import { FirstPersonControls } from "three/addons/controls/FirstPersonControls.js";
-import { ImprovedNoise } from "three/addons/math/ImprovedNoise.js";
-import * as BufferGeometryUtils from "three/addons/utils/BufferGeometryUtils.js";
+import * as THREE from "../../assets/build/three.module.js";
 
+import Stats from "../../assets/jsm/libs/stats.module.js";
+
+import { FirstPersonControls } from "../../assets/jsm/controls/FirstPersonControls.js";
+import { ImprovedNoise } from "../../assets/jsm/math/ImprovedNoise.js";
+import * as BufferGeometryUtils from "../../assets/jsm/utils/BufferGeometryUtils.js";
 let container, stats;
 let camera, controls, scene, renderer;
 const worldWidth = 128,

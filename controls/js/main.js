@@ -1,7 +1,7 @@
-import * as THREE from 'three';
-import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
-import { MapControls } from 'three/addons/controls/MapControls.js';
+import * as THREE from '../../assets/build/three.module.js';
 
+import { GUI } from '../../assets/jsm/libs/lil-gui.module.min.js';
+import { MapControls } from '../../assets/jsm/controls/MapControls.js';
 let camera, controls, scene, renderer;
 
 init();

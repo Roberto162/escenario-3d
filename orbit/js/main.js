@@ -1,6 +1,6 @@
-    import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import * as THREE from '../../assets/build/three.module.js';
 
+import { OrbitControls } from '../../assets/jsm/controls/OrbitControls.js';
 let camera, controls, scene, renderer;
 
 init();
